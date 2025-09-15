@@ -24,11 +24,12 @@ object Trinity{
     method esElElegido() = false
     method vitalidad() = 0 
     method saltar(){
-        
-    }
 
+    }
 }
 
 object Nave{
-
+    const pasajeros = #{Neo,Morfeo,Trinity}
+    method cantidadPasajeros() = pasajeros.size()
+    method pasajeroMayorVitalidad() = pasajeros.max({p =>p.vitalidad()})
 }
