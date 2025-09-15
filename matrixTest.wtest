@@ -34,3 +34,21 @@ describe "Test de Morfeo " {
   assert.notThat(Morfeo.estaCansado())
  }
 }
+
+describe "Test de trinity"{
+  test "trinity no es la elegida" {
+    assert.notThat(Trinity.esElElegido())
+  }
+  test "La vitalidad de Trinity "{
+    assert.equals(0, Trinity.vitalidad())
+  }
+
+  test"vitalidad de Trinity despues de un salto"{
+    Trinity.saltar()
+    assert.equals(Trinity.vitalidad(), 0)
+  }
+ 
+
+
+
+}

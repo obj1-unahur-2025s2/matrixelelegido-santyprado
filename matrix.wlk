@@ -21,6 +21,11 @@ object Morfeo {
 }
 
 object Trinity{
+    method esElElegido() = false
+    method vitalidad() = 0 
+    method saltar(){
+        
+    }
 
 }
 
