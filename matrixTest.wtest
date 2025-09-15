@@ -49,10 +49,10 @@ describe "Test de trinity"{
   }
 }
 describe "Test de la nave" {
-  test "La cantidad de pasajeros que tiene la nave" {
+  test "La cantidad de pasajeros que tiene la naveal inicio" {
     assert.equals(3, Nave.cantidadPasajeros())
   }
-  test "El pasajero con mayor vitalidad que hay en la nave"{
+  test "El pasajero con mayor vitalidad que hay en la nave al inicio"{
     assert.equals(Neo, Nave.pasajeroMayorVitalidad())
   }
 }
