@@ -41,8 +41,8 @@ object Nave{
       pasajeros.forEach({p =>p.saltar()})
       pasajeros.clear()
     }
-    method pasajerosQueNoSonElegidos() = pasajeros.filter({p=>p 
+    method pasajerosQueNoSonElegidos() = pasajeros.filter({p=>not p.esElElegido()})
     method acelerar(){
-
+        self.pasajerosQueNoSonElegidos().forEach({p =>p.saltar()})
     }
 }

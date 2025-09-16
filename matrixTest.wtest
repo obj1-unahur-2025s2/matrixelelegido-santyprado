@@ -55,4 +55,15 @@ describe "Test de la nave" {
   test "El pasajero con mayor vitalidad que hay en la nave al inicio"{
     assert.equals(Neo, Nave.pasajeroMayorVitalidad())
   }
+  test "El elegido esta en la nave"{
+    assert.that(Nave.elElegidoEsta())
+  }
+  test "La nave choca"{
+    Nave.chocar()
+    assert.equals(0, Nave.cantidadPasajeros())
+  }
+  test "La nave acelera"{
+    Nave.acelerar()
+    assert.that(Nave.elElegidoEsta())
+  }
 }
