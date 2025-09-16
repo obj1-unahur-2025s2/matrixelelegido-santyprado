@@ -32,4 +32,17 @@ object Nave{
     const pasajeros = #{Neo,Morfeo,Trinity}
     method cantidadPasajeros() = pasajeros.size()
     method pasajeroMayorVitalidad() = pasajeros.max({p =>p.vitalidad()})
+    method vitalidadEstaEquilibrada() = 
+        pasajeros.map({p =>p.vitalidad()*2}).all(
+            { v=>v < pasajeros.max({p =>p.vitalidad()})}) //terminar
+
+    method elElegidoEsta() = pasajeros.any({p =>p.esElElegido()})
+    method chocar() {
+      pasajeros.forEach({p =>p.saltar()})
+      pasajeros.clear()
+    }
+    method pasajerosQueNoSonElegidos() = pasajeros.filter({p=>p 
+    method acelerar(){
+
+    }
 }
